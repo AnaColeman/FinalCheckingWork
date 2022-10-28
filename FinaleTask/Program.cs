@@ -51,4 +51,20 @@ for (int i = 0; i <= array.Length - 1; i++)
 
 PrintArray(array);
 Console.Write("→ ");
+
 PrintArray(newArray);
+void Commands()
+{
+    Console.WriteLine();
+    Console.WriteLine("LIST OF COMMANDS:");
+    Console.WriteLine("1 use array: [“Hello”, “2”, “world”, “:-)”]");
+    Console.WriteLine("2 use array: [“1234”, “1567”, “-2”, “computer science”]");
+    Console.WriteLine("3 use array: [“Russia”, “Denmark”, “Kazan”]");
+    Console.WriteLine();
+}
+
+string ReadInput(string msg)
+{
+    Console.Write(msg);
+    return Console.ReadLine();
+}
